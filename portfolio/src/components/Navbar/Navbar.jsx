@@ -1,31 +1,33 @@
-import './Navbar.css'
+import "./Navbar.css"
 
 function Navbar() {
   return (
-    <header className="navbar-header">
-      <nav className="navbar">
-        <a className="navbar-brand" href="#">
-          Fabrizio Peralta
+    <header className="navbar">
+      <div className="navbar-container">
+        <a className="navbar-logo" href="#home">
+          FP
         </a>
 
-        <ul className="navbar-links">
+        <nav>
+          <ul className="navbar-links">
             <li>
-                <a href="#about">Sobre mí</a>
+              <a href="#about">Sobre mí</a>
             </li>
 
             <li>
-                <a href="#technologies">Tecnologías</a>
+              <a href="#technologies">Tecnologías</a>
             </li>
 
             <li>
-                <a href="#projects">Proyectos</a>
+              <a href="#projects">Proyectos</a>
             </li>
 
             <li>
-                <a href="#contact">Contacto</a>
+              <a href="#contact">Contacto</a>
             </li>
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      </div>
     </header>
   )
 }

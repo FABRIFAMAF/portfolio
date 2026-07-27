@@ -7,9 +7,7 @@ function About({ profile }) {
         <p className="section-label">{profile.aboutTitle}</p>
 
         <div className="about-content">
-          <h2>
-            Construyo proyectos para comprender cómo funciona el software.
-          </h2>
+          <h2>{profile.aboutHeading}</h2>
 
           <p>{profile.aboutText}</p>
         </div>

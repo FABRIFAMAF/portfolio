@@ -4,17 +4,28 @@ function Hero({ profile }) {
   return (
     <main className="main-content">
       <section className="hero">
-        <p className="hero-greeting">{profile.greeting}</p>
+        <div className="hero-container">
 
-        <h1>{profile.name}</h1>
+          <p className="hero-greeting">
+            {profile.greeting}
+          </p>
 
-        <h2>{profile.title}</h2>
+          <h1>{profile.name}</h1>
 
-        <p className="hero-description">{profile.description}</p>
+          <h2>{profile.title}</h2>
 
-        <a className="hero-button" href="#projects">
-          {profile.buttonText}
-        </a>
+          <p className="hero-description">
+            {profile.description}
+          </p>
+
+          <a
+            className="hero-button"
+            href="#projects"
+          >
+            {profile.buttonText}
+          </a>
+
+        </div>
       </section>
     </main>
   )
